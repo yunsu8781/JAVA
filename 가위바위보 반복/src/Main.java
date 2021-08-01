@@ -7,8 +7,8 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		int user1 = 0;
 		
-		do {	
-		
+		do {
+			
 	Scanner scanner2	= new Scanner(System.in);
 	Random random = new Random();
 	

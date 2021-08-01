@@ -1,0 +1,33 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffe3d3213f3, pid=48340, tid=49044
+#
+# JRE version:  (15.0.2+7) (build )
+# Java VM: OpenJDK 64-Bit Server VM (15.0.2+7-27, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x3513f3]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:+ShowCodeDetailsInExceptionMessages -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:2695 -javaagent:C:\Users\똘\Desktop\자바 이크립스\eclipse\configuration\org.eclipse.osgi\222\0\.cp\lib\javaagent-shaded.jar -Dfile.encoding=MS949 Quiz1.Main
+
+Host: Intel(R) Core(TM) i5-8600 CPU @ 3.10GHz, 6 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1023)
+Time: Sat Jul 31 22:23:07 2021 대한민국 표준시 elapsed time: 3.159128 seconds (0d 0h 0m 3s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000020ab1269ba0):  JavaThread "main" [_thread_in_vm, id=49044, stack(0x000000bb95f00000,0x000000bb96000000)]
+
+Stack: [0x000000bb95f00000,0x000000bb96000000],  sp=0x000000bb95ffd600,  free space=1013k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x3513f3]
+V  [jvm.dll+0x62adc2]
+V  [jvm.dll+0x3510be]
+V  [jvm.dll+0x33a3b7]
+V  [jvm.dll+0x339e18]
+V  [jvm.dll+0x356a1a]
