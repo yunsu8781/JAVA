@@ -9,7 +9,8 @@ Scanner scanner = new Scanner(System.in);
 int num1 = scanner.nextInt();
 int num2 = scanner.nextInt();
 
-System.out.println("확인된 공약수는 %n",print(commonDivisor(num1,num2)) );
+
+
 	
 }
 }
