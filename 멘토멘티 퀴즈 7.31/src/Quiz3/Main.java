@@ -7,13 +7,15 @@ public class Main {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("HP = 170");
+		int HP = 170;
+        System.out.println("HP = 170");
+		
+		while (HP > 0) {
+	
 		System.out.println("Skill1 : 30");
 		System.out.println("Skill2 : 70");
 		System.out.println("Skill3 : 100");
-		int HP = 170;
 
-		while (HP > 0) {
 			int skill = scanner.nextInt();
 			switch (skill) {
 			case 1:
@@ -37,6 +39,6 @@ public class Main {
 			}
 		}
 		System.out.println("즉었습니다.");
-		
+
 	}
 }
