@@ -19,6 +19,6 @@ public class Main {
         }  else (age >= 50) {
 	        System.out.println("취미를 즐기세용");
         } 
-		
+	}
 	}
 }
