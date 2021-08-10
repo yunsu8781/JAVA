@@ -11,9 +11,9 @@ public class Main {
 		int Remain = Num%2; 
 				
 		if (Remain == 0 ) {
-			System.out.println("짝수입니다!");
+			System.out.println("짝수입니다");
 		} if (Remain != 0) { 
-			System.out.println("홀수입니다!");		
+			System.out.println("홀수입니다");		
 		}
 		
 	}
