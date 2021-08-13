@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Main {
 public static void main(String[] args) {
 	
+    int firstArray = new int[6];
+	
 	Scanner scanner = new Scanner(System.in);
 	
 	System.out.println("첫번째 숫자들을 입력해 주세요.");
