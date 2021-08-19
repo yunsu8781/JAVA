@@ -17,7 +17,7 @@ public class Main {
 			System.err.println("C");
 	    }else if(score >= 20) {
 	    	System.err.println("D");	
-        }else if(score < 19 ) {
+        }else if(score <= 19 ) {
         	System.err.println("F");	
         }
 			
