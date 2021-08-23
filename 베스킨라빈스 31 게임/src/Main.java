@@ -19,7 +19,8 @@ public class Main {
 	        currentNumber = 2;
 
 	        while(currentNumber < 31) {
-	            System.out.print("몇 개의 수를 부르시겠습니까? >>");
+	            
+	        	System.out.print("몇 개의 수를 부르시겠습니까? >>");
 	            while(true) {
 	                userCount = s.nextInt();
 	                if (userCount<=3&&userCount>=1) {
