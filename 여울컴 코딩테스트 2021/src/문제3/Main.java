@@ -6,11 +6,11 @@ public class Main {
 public static void main(String[] args) {
 	
 Scanner scanner = new Scanner(System.in);
-int num1 = scanner.nextInt();
-int num2 = scanner.nextInt();
+int score[] = new int[10];
 
+for (int i = 0; i < 10; i++) {
+	score[i] = scanner.nextInt();
+}
 
-
-	
 }
 }
