@@ -6,6 +6,7 @@ public class Q10807 {
 	public static void main(String[] args) {
 		
         Scanner sc = new Scanner(System.in);
+	try{
         int Num = sc.nextInt();
         int[] array = new int[Num];
 
@@ -23,7 +24,9 @@ public class Q10807 {
         }
 
         System.out.println(count);
-		
+	}catch (Exception e){
+		e.printStackTrace();
+	}
 		
 	}
 }
