@@ -2,56 +2,42 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class beskin {
 
-	 static Scanner s = new Scanner(System.in);
-	  	
 	public static void main(String[] args) {
 
-		 int currentNumber = 0;
-	        int userCount = 0;
+		Scanner scanner = new Scanner(System.in);
+		Random random = new Random();
 
-	        Scanner s = new Scanner(System.in);
+		try {
 
-	        System.out.println("°ÔÀÓÀ» ½ÃÀÛÇÏ°Ú½À´Ï´Ù.");
-	        System.out.println();
-	        System.out.println("CPU >> 1 2");
-	        currentNumber = 2;
+			for (int i = 0; i < 32;) {
 
-	        while(currentNumber < 31) {
-	            
-	        	System.out.print("¸î °³ÀÇ ¼ö¸¦ ºÎ¸£½Ã°Ú½À´Ï±î? >>");
-	            while(true) {
-	                userCount = s.nextInt();
-	                if (userCount<=3&&userCount>=1) {
-	                    System.out.println();
-	                    break;
-	                }
-	                else {
-	                    System.out.println();
-	                    System.out.print("´Ù½Ã ÀÔ·ÂÇÏ½Ê½Ã¿ä>>");
-	                }
-	            }
+				if (i >= 31) {
+					System.out.println("ìœ ì € ìŠ¹ë¦¬");
+					break;
+				} else {
+					System.out.println("í˜„ìž¬ ìˆ«ìž : " + i + "  ìœ ì €ê°€ ìž…ë ¥í•  ì°¨ë¡€");
+					System.out.print("ìž…ë ¥í•  ìˆ«ìž : ");
+					int userCount = scanner.nextInt(4);
+					i += userCount;
+				}
 
-	            System.out.print("User >> ");
-	            for(int n = 0; n < userCount; n++) {
-	                ++currentNumber;
-	                System.out.print(currentNumber + " ");
-	            }
-	            System.out.println();
+				if (i >= 31) {
+					System.out.println("ì»´í“¨í„° ìŠ¹ë¦¬");
+					break;
+				} else {
+					System.out.println("í˜„ìž¬ ìˆ«ìž : " + i + "  ì»´í“¨í„°ê°€ ìž…ë ¥í•  ì°¨ë¡€");
+					int cpuCount = random.nextInt((3 - 1) + 1) + 1;
+					System.out.println("ìž…ë ¥í•œ ìˆ«ìž : " + cpuCount);
+					i += cpuCount;
 
-	            System.out.print("CPU >> ");
-	            for(int i = 0; i < (4-userCount); i++) {
-	                ++currentNumber;
-	                if(currentNumber < 31)
-	                    System.out.print(currentNumber + " ");
-	            }
-	            System.out.println();
+				}
 
-	            userCount = 0;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
-	        }
-	        s.close();
-		
 	}
 }
