@@ -9,7 +9,7 @@ public class Solution {
 	int E;
 	int F;
 		
-	public Solution() {}
+	public Solutiom() {}
 	
 	int solution(String n[]) {	
 		int passer = n.length;
@@ -17,18 +17,26 @@ public class Solution {
 		for (int i = 0; i < n.length; i++) {
 				char[] arr = n[i].toCharArray();
 				for (int j = 0; j < arr.length; j++) {
-					 if (arr[j] == 'A') {
+					 switch (arr[j]) {
+					case 'A':
 						A++;
-					}else if (arr[j] == 'B') {
-						B++;
-					}else if (arr[j] == 'C') {
-						C++;
-					}else if (arr[j] == 'D') {
-						D++;
-					}else if (arr[j] == 'E') {
-						E++;
-					}else if (arr[j] == 'F') {
-						F++;
+						break;
+					case 'B':
+						B++;						
+						break;
+					case 'C':						
+						C++;						
+						break;
+					case 'D':
+						D++;												
+						break;
+					case 'E':
+						E++;																		
+						break;
+					case 'F':
+						F++;																								
+						break;
+
 					}
 				}
 				if (F >= 2 ) {
